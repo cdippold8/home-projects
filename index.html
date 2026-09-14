@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Home Projects</title>
+  <meta name="description" content="A weekly-scheduled to-do list for home projects, with materials lists and progress tracking." />
+  <meta name="theme-color" content="#4d7c5f" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" href="icons/icon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="icons/icon-192.png" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="apple-mobile-web-app-title" content="Home Projects" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="app">
+    <header class="top">
+      <h1>Home Projects</h1>
+      <p class="subtitle">Your running to-do list, by week and by size</p>
+
+      <div class="progress-wrap">
+        <div class="progress-bar"><div class="progress-fill" id="progress-fill"></div></div>
+        <div class="progress-label">
+          <span id="progress-text">0 of 0 done</span>
+          <span id="progress-pct">0%</span>
+        </div>
+      </div>
+
+      <nav class="tabs">
+        <button id="tab-schedule" class="active" data-view="schedule">Schedule</button>
+        <button id="tab-tasks" data-view="tasks">All Tasks</button>
+      </nav>
+    </header>
+
+    <main>
+      <section id="view-schedule" class="view active"></section>
+      <section id="view-tasks" class="view"></section>
+    </main>
+  </div>
+
+  <footer class="bottom">
+    <button class="reset-btn" id="reset-btn">Reset all checkmarks</button>
+  </footer>
+
+  <div class="toast" id="toast"></div>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
