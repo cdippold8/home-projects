@@ -99,6 +99,18 @@ const TASKS = [
     materials: ['Stain or paint', 'Brush', 'Rags', 'Sandpaper'] },
   { id: 'lg-frames-mount', category: 'large', project: 'Make frames for cat paintings', step: 'Mount and hang',
     materials: ['Mounting hardware/backing', 'Picture hangers', 'Hammer/level'] },
+
+  // ---- Large: Curtains for Back Window ----
+  { id: 'lg-curtains-measure', category: 'large', project: 'Make curtains for back window and install', step: 'Measure window, choose fabric/style',
+    materials: ['Tape measure', 'Fabric swatches/samples'] },
+  { id: 'lg-curtains-buy', category: 'large', project: 'Make curtains for back window and install', step: 'Buy fabric and hardware',
+    materials: ['Fabric', 'Curtain lining (optional)', 'Thread', 'Curtain rod', 'Brackets', 'Hooks/rings'] },
+  { id: 'lg-curtains-sew', category: 'large', project: 'Make curtains for back window and install', step: 'Cut and sew panels',
+    materials: ['Sewing machine', 'Scissors', 'Pins', 'Iron', 'Measuring tape'] },
+  { id: 'lg-curtains-hem', category: 'large', project: 'Make curtains for back window and install', step: 'Hem and finish',
+    materials: ['Iron', 'Hem tape or thread', 'Curtain weights (optional)'] },
+  { id: 'lg-curtains-install', category: 'large', project: 'Make curtains for back window and install', step: 'Install rod and hang curtains',
+    materials: ['Curtain rod', 'Brackets', 'Screws', 'Drill', 'Level', 'Stud finder'] },
 ];
 
 // Weekly Mon–Fri schedule. Each entry references a task id from TASKS above,
@@ -180,6 +192,16 @@ const SCHEDULE = [
     days: [
       { day: 'Mon', taskId: 'md-deck-cleanup' },
       { day: 'Tue', taskId: 'md-veggie-replant' },
+      { day: 'Wed', taskId: 'lg-curtains-measure' },
+      { day: 'Thu', taskId: 'lg-curtains-buy' },
+      { day: 'Fri', taskId: 'lg-curtains-sew' },
+    ],
+  },
+  {
+    label: 'Week 9', dates: 'Nov 9 – 13',
+    days: [
+      { day: 'Mon', taskId: 'lg-curtains-hem' },
+      { day: 'Tue', taskId: 'lg-curtains-install' },
     ],
   },
 ];
