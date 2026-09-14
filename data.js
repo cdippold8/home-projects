@@ -49,6 +49,10 @@ const TASKS = [
     materials: ['Soil test kit', 'Compost/amendments', 'Garden fork'] },
   { id: 'md-north-plan', category: 'medium', project: 'Prep soil on north side + determine plantings', step: 'Finalize planting plan',
     materials: ['Graph paper/planning app (optional)', 'Plant tags/stakes'] },
+  { id: 'md-deck-cleanup', category: 'medium', project: 'Clean up plants on back deck and replant veggie bed', step: 'Clean up back deck plants',
+    materials: ['Pruners/shears', 'Yard waste bags', 'Gloves', 'Broom'] },
+  { id: 'md-veggie-replant', category: 'medium', project: 'Clean up plants on back deck and replant veggie bed', step: 'Replant veggie bed',
+    materials: ['Compost/soil amendments', 'Garden trowel', 'Vegetable seeds or starts', 'Watering can or hose', 'Gloves'] },
 
   // ---- Large: Drip Irrigation ----
   { id: 'lg-drip-map', category: 'large', project: 'Install drip irrigation', step: 'Map zones, sketch layout',
@@ -169,6 +173,13 @@ const SCHEDULE = [
       { day: 'Wed', taskId: 'lg-frames-cut' },
       { day: 'Thu', taskId: 'lg-frames-finish' },
       { day: 'Fri', taskId: 'lg-frames-mount' },
+    ],
+  },
+  {
+    label: 'Week 8', dates: 'Nov 2 – 6',
+    days: [
+      { day: 'Mon', taskId: 'md-deck-cleanup' },
+      { day: 'Tue', taskId: 'md-veggie-replant' },
     ],
   },
 ];
