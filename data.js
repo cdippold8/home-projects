@@ -33,6 +33,8 @@ const TASKS = [
     materials: ['Sandpaper', "Painter's tape", 'Drop cloth', 'Primer'] },
   { id: 'sm-trim-paint', category: 'small', project: 'Paint trim on windows', step: 'Paint/finish',
     materials: ['Exterior trim paint', 'Angled sash brush', 'Drop cloth'] },
+  { id: 'sm-screens', category: 'small', project: 'Replace screens in sliding door and downstairs windows', step: null,
+    materials: ['Replacement screen mesh/kit', 'Spline roller tool', 'Screen spline', 'Utility knife', 'Screwdriver (for removing frames)'] },
 
   // ---- Medium ----
   { id: 'md-grass-clear', category: 'medium', project: 'Till/aerate back grass and reseed', step: 'Clear debris, till/aerate',
@@ -202,6 +204,7 @@ const SCHEDULE = [
     days: [
       { day: 'Mon', taskId: 'lg-curtains-hem' },
       { day: 'Tue', taskId: 'lg-curtains-install' },
+      { day: 'Wed', taskId: 'sm-screens' },
     ],
   },
 ];
